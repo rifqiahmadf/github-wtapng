@@ -11,10 +11,11 @@ export default async function fetchJson<JSON = unknown>(
   // response.ok is true when res.status is 2xx
   // https://developer.mozilla.org/en-US/docs/Web/API/Response/ok
   console.log(`
-    fetchJson.ts\n
-    response\t : ${response}\n
-    data\t: ${data}\n
-    ========================
+  ========================
+  fetchJson.ts
+  response: ${JSON.stringify(response)}
+  data: ${JSON.stringify(data)}
+  ========================
   `);
 
   if (response.ok) {

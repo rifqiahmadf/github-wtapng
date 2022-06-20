@@ -27,11 +27,12 @@ async function eventsRoute(req: NextApiRequest, res: NextApiResponse<Events>) {
       });
 
     console.log(`
-      events.ts\n
-      user\t : ${user}\n
-      events\t : ${events}\n
-      req.session\t : ${req.session}
-      ========================
+    ========================
+    events.ts
+    user: ${user}
+    events: ${events}
+    req.session: ${req.session}
+    ========================
     `);
     res.json(events);
   } catch (error) {

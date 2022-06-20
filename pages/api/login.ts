@@ -20,9 +20,10 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
     req.session.user = user;
 
     console.log(`
-    login.ts\n
-    req.body\t : ${req.body}\n
-    req.session\t : ${req.session}\n
+    ========================
+    login.ts
+    req.body: ${JSON.stringify(req.body)}
+    req.session: ${JSON.stringify(req.session)}
     ========================
     `);
 

@@ -12,8 +12,9 @@ export default withIronSessionApiRoute(userRoute, sessionOptions);
 
 async function userRoute(req: NextApiRequest, res: NextApiResponse<User>) {
   console.log(`
-  user.ts\n
-  req.session\t : ${req.session}\n
+  ========================
+  user.ts
+  req.session: ${JSON.stringify(req.session)}
   ========================
   `);
   if (req.session.user) {

@@ -5,8 +5,9 @@ import type { Events } from 'pages/api/events';
 export default function useEvents(user: User | undefined) {
   // We do a request to /api/events only if the user is logged in
   console.log(`
-  useEvents.ts\n
-  user\t : ${user}\n
+  ========================
+  useEvents.ts
+  user: ${user}
   ========================
 `);
   const { data: events } = useSWR<Events>(

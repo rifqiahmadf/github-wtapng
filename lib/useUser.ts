@@ -10,11 +10,12 @@ export default function useUser({
   const { data: user, mutate: mutateUser } = useSWR<User>('/api/user');
 
   console.log(`
-  useUser.ts\n
-  user\t : ${user}\n
-  mutateUser\t : ${mutateUser}\n
-  redirectTo\t : ${redirectTo}\n,
-  redirectIfFound\t : ${redirectIfFound},
+  ========================
+  useUser.ts
+  user: ${user}
+  mutateUser: ${mutateUser}
+  redirectTo: ${redirectTo},
+  redirectIfFound: ${redirectIfFound},
   ========================
 `);
   useEffect(() => {
